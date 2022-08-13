@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhora Deva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="header">
+            <a href="https://www.instagram.com/senhora.deva/" target="_blank">
+                <img class="logo" src="./icon.png" alt="Logo da Senhora Deva" width="200px">
+            </a>
+        </header>
+        <section class="main-content">
+            <div class="card">
+                <h3 class="card-title"> Componente web com Vanillão JavaScript</h3>
+                <img src="./ebook2.PNG" alt="Imagem e-book da Senhora Deva sobre finanças em Python">
+
+                <a href="./ebook-components.pdf" download="e-Book" class="card-btn">Download</a>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Rascunhos da Senhora Deva</h3>
+                <img src="./ebook.PNG" alt="Imagem e-book da Senhora Deva sobre finanças em Python">
+
+                <a href="./e-Book.pdf" download="e-Book" class="card-btn">Download</a>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Lib Angular ngx-deva-tooltip</h3>
+                <img src="./senhora.png" alt="Imagem e-book da Senhora Deva sobre finanças em Python">
+
+                <a href="https://www.npmjs.com/package/ngx-deva-tooltip" target="_blank" class="card-btn">Link</a>
+            </div>
+        </section>
+
+
+    </main>
+    <script>
+        const header = document.querySelector(".header");
+        const headerHeight = parseInt(window.getComputedStyle(header).height);
+
+        document.addEventListener("scroll", function () {
+            if (window.scrollY > headerHeight) {
+                header.classList.add("header_scroll");
+            } else {
+                header.classList.remove("header_scroll");
+            };
+        });
+    </script>
+</body>
+
+</html>
